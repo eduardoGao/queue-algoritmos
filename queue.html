@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queue</title>
+  <style>
+    body {
+      font-family: monospace;
+      display: grid;
+      height: 95vh;
+    }
+    h2 {
+      text-align: center;
+    }
+    .botones {
+      place-self: center;
+    }
+    button {
+      font-family: inherit;
+      border-radius: 5px;
+      border: none;
+      padding: 1em;
+      margin: .5em;
+      transition: .3s;
+    }
+    #entry {
+      background: rgba(60,224,138,0.7);
+    }
+    #entry:hover {
+      background: rgba(60,224,138,1);
+    }
+    #exit {
+      background: rgba(238,51,79,0.7);
+    }
+    #exit:hover {
+      background: rgba(238,51,79,1);
+    }
+  </style>
+</head>
+<body>
+  <div class="botones">
+    <h2>Queue Exercise</h2>
+    <button onclick="activeEntry()" id="entry">Entrar</button>
+    <button onclick="activeExit()" id="exit">Salir</button>
+  </div>
+  <script src="queue.js"></script>
+</body>
+</html>
